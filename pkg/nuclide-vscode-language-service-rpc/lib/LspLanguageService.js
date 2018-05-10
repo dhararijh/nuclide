@@ -1241,7 +1241,7 @@ export class LspLanguageService {
     }
 
     // During that second await, if the server received further edits from the client,
-    // then the buffer object might have been mutated in place, so its file-verion will
+    // then the buffer object might have been mutated in place, so its file-version will
     // no longer match. In this case we return null.
     return buffer != null && buffer.changeCount === fileVersion.version
       ? buffer
@@ -1855,7 +1855,7 @@ export class LspLanguageService {
       });
     } catch (e) {
       this._logLspException(e);
-      // Rethrow the exception so the upsteam caller has access to the error message.
+      // Rethrow the exception so the upstream caller has access to the error message.
       throw e;
     }
   }

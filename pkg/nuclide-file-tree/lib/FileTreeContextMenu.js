@@ -388,7 +388,7 @@ export default class FileTreeContextMenu {
     );
 
     // Add the "Show in X" menu group. There's a bit of hackery going on here: we want these items
-    // to be applied to anyhing that matches our CSS selector, but we also want them to occur in a
+    // to be applied to anything that matches our CSS selector, but we also want them to occur in a
     // specific order in the file tree context menu. Since `atom.contextMenu` doesn't support
     // priority, we add them twice. Ideally, these menu items wouldn't be in the file tree package
     // at all, but for historical reasons they are. Someday maybe we can pull them out.

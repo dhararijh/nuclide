@@ -38,7 +38,7 @@ export function getDefaultConfig(): log4js$Config {
       layout: {
         type: 'pattern',
         // Format log in following pattern:
-        // yyyy-MM-dd HH:mm:ss.mil $Level (pid:$pid) $categroy - $message.
+        // yyyy-MM-dd HH:mm:ss.mil $Level (pid:$pid) $category - $message.
         pattern: `%d{ISO8601} %p (pid:${process.pid}) %c - %m`,
       },
     },
